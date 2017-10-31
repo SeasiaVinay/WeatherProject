@@ -25,6 +25,7 @@ public class WeatherService : IWeatherService
             wp = JsonConvert.DeserializeObject<WeatherReports>(output);
 
             wp.current_observation.weather = "Not Available";
+
             return wp;
         }
     }
