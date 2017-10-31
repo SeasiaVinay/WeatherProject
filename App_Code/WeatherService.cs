@@ -24,8 +24,7 @@ public class WeatherService : IWeatherService
             output = client.DownloadString(input);
             wp = JsonConvert.DeserializeObject<WeatherReports>(output);
 
-            wp.current_observation.weather = "Not Available";
-
+            wp.current_observation.weather = "Not Available now";
             return wp;
         }
     }
