@@ -15,7 +15,7 @@ public class WeatherService : IWeatherService
     public WeatherReports getWeatherDetails(string city_name, string state_name, int UserName)
     {
         string key = "4b47e918045b2342";
-        string output;
+        string output = string.Empty;
         WeatherReports wp = new WeatherReports();
 
         using (WebClient client = new WebClient())
