@@ -10,5 +10,5 @@ using System.Text;
 public interface IWeatherService
 {
     [OperationContract]
-    WeatherReports getWeatherDetails(string city_name, string state_name);
+    WeatherReports getWeatherDetails(string city_name, string state_name, int UserName);
 }
