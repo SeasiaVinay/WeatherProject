@@ -26,6 +26,8 @@ public class current_observations
     [DataMember]
     public string temperature_string { get; set; }
     [DataMember]
+
+
     public string temp_f { get; set; }
     [DataMember]
     public string temp_c { get; set; }
