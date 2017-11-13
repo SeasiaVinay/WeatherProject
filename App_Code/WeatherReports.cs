@@ -17,6 +17,7 @@ public class WeatherReports
 }
 
 
+
 [DataContract]
 public class current_observations
 {
