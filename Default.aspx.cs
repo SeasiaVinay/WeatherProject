@@ -19,7 +19,7 @@ public partial class _Default : System.Web.UI.Page
     {
         string StateName = Convert.ToString(txtState.Text);
         string CityName = Convert.ToString(txtCity.Text);
-        WeatherReports r = WeatherService.getWeatherData(CityName, StateName);
+        WeatherReports r = WeatherService.getWeatherDetails(CityName, StateName,1);
 
         if (r.current_observation != null)
         {
